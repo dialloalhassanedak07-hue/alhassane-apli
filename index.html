@@ -2,19 +2,69 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Alhassane Apli</title>
+  <title>Alhassane Digitale Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.4);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 350px;
+      width: 90%;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    h1 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+    a.button {
+      display: block;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+    }
+    .call {
+      background: #1e90ff;
+    }
+    .whatsapp {
+      background: #25d366;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Alhassane Apli</h1>
+  <div class="card">
+    <h1>Alhassane Digitale Services</h1>
+    <p>Assistant messages · Freelance</p>
 
-<p>
-  📞 <a href="tel:+221775450350">Appeler : +221 77 545 03 50</a>
-</p>
+    <a class="button call" href="tel:+221775450350">
+      📞 Appeler
+    </a>
 
-<p>
-  💬 <a href="https://wa.me/221775450350">WhatsApp</a>
-</p>
+    <a class="button whatsapp" 
+       href="https://wa.me/221775450350?text=Bonjour%20je%20vous%20contacte%20pour%20vos%20services%20digitaux"
+       target="_blank">
+      💬 WhatsApp
+    </a>
+  </div>
 
 </body>
 </html>
