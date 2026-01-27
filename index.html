@@ -1,70 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Alhassane Digitale Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Matara Digitale Services</title>
+
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
       height: 100vh;
-      text-align: center;
+      background: url("background.jpg") no-repeat center center / cover;
+      overflow: hidden;
     }
+
+    .overlay {
+      height: 100%;
+      background: rgba(0, 0, 0, 0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     .card {
-      background: rgba(0,0,0,0.4);
-      padding: 30px;
-      border-radius: 15px;
-      max-width: 350px;
-      width: 90%;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      background: white;
+      padding: 32px 22px;
+      width: 92%;
+      max-width: 380px;
+      border-radius: 22px;
+      text-align: center;
+      animation: fadeUp 1s ease forwards;
     }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .photo {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 4px solid #111;
+    }
+
     h1 {
-      margin-bottom: 10px;
-      font-size: 24px;
+      font-size: 22px;
+      margin-bottom: 8px;
     }
-    p {
-      font-size: 16px;
-      margin-bottom: 25px;
+
+    .msg {
+      font-size: 15px;
+      margin-bottom: 22px;
+      color: #333;
+      font-weight: 600;
     }
-    a.button {
+
+    .btn {
       display: block;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
+      padding: 13px;
+      margin: 10px 0;
+      border-radius: 12px;
       color: white;
+      font-weight: bold;
+      transition: transform 0.2s ease, opacity 0.2s ease;
     }
-    .call {
-      background: #1e90ff;
+
+    .btn:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
     }
-    .whatsapp {
-      background: #25d366;
+
+    .call { background: #000; }
+    .whatsapp { background: #25D366; }
+    .facebook { background: #1877F2; }
+    .gmail { background: #EA4335; }
+    .instagram {
+      background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+    }
+
+    .footer {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
+  <div class="overlay">
+    <div class="card">
+      <img src="photo.jpg" alt="Photo profil" class="photo" />
 
-  <div class="card">
-    <h1>Alhassane Digitale Services</h1>
-    <p>Assistant messages · Freelance</p>
+      <h1>Matara Digitale Services</h1>
+      <div class="msg">Bienvenue — Accueil professionnel</div>
 
-    <a class="button call" href="tel:+221775450350">
-      📞 Appeler
-    </a>
+      <a class="btn call" href="tel:+221775450350">📞 Appeler</a>
+      <a class="btn whatsapp" href="https://wa.me/221775450350">💬 WhatsApp Business</a>
+      <a class="btn facebook" href="#">📘 Facebook</a>
+      <a class="btn instagram" href="#">📸 Instagram</a>
+      <a class="btn gmail" href="mailto:example@gmail.com">✉️ Gmail</a>
 
-    <a class="button whatsapp" 
-       href=
-      💬 WhatsApp
-    </a>
-  </div>https://wa.me/221775450350?text=Bonjour%20je%20vous%20contacte%20pour%20vos%20services%20digitaux
-
-
+      <div class="footer">© 2026 — Services numériques</div>
+    </div>
+  </div>
 </body>
 </html>
